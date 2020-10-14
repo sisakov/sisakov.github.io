@@ -1,21 +1,14 @@
 import React from 'react';
-import { Grid, Image } from 'semantic-ui-react';
-import sisakovImage from '../../assets/img/sisakov.jpg';
+import { Route, Switch } from 'react-router-dom';
+import MainPage from '../MainPage/MainPage';
+import CVPage from '../CVPage/CVPage';
 
 function App() {
   return (
-    <Grid columns={2} divided>
-      <Grid.Row>
-        <Grid.Column color="blue" align="center">
-          <Image src={sisakovImage} size="medium" circular />
-          <h2>Stas Isakov</h2>
-        </Grid.Column>
-        <Grid.Column color="violet">
-          <h2>Skills:</h2>
-          <p>Work in progress :)</p>
-        </Grid.Column>
-      </Grid.Row>
-    </Grid>
+    <Switch>
+      <Route path="/" component={MainPage} exact />
+      <Route path="/cv" component={CVPage} exact />
+    </Switch>
   );
 }
 
