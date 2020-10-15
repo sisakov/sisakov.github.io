@@ -54,6 +54,7 @@
   },
   "husky": {
     "hooks": {
+      "pre-commit": "npm test && eslint src ",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
