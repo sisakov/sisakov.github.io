@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Image, Button } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import sisakovImage from '../../assets/img/github.jpg';
+import sisakovImage from '../../assets/img/github.jpeg';
 
 export default function MainPage() {
   return (
